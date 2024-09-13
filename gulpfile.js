@@ -1,8 +1,7 @@
 const {task,src,dest,watch,series,parallel} = require('gulp');
 const server = require('gulp-webserver');
 const sass = require('gulp-sass');
-var serverstarted=0;	// set a port to avoid conflicts with other local apps
-
+var serverstarted=0;
 // All paths
 const paths = {
   index: {src: ['./src/*.html'], dest: './dist/' },
@@ -66,7 +65,7 @@ function myServer() {
   .pipe(server({
     livereload: true,
     open: true,
-    port: 4321,	// set a port to avoid conflicts with other local apps
+    port: 4321,
   }));
 }
 // Export tasks to make them public
