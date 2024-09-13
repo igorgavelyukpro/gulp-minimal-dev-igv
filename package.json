@@ -1,0 +1,19 @@
+{
+  "name": "gulp-dev",
+  "version": "1.0.0",
+  "description": "Very basic ",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-webserver": "^0.9.1"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "gulp watch"
+  },
+  "author": "Igor Gavelyuk",
+  "license": "ISC"
+}
